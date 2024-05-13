@@ -12,8 +12,6 @@ const app = express();
 
 const cors = require('cors'); 
 
-const ports = 3000;
-
 app.use(bodyParser.json());
 
 app.use(cors());
@@ -33,4 +31,8 @@ app.use(errorController.get404);
 
 app.use(errorController.get500);
 
-app.listen(ports, () => console.log(`port numero ${ports}`));
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8000;
+}
+app.listen(port);
