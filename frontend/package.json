@@ -9,6 +9,7 @@
     "test": "ng test",
     "serve:ssr:posts": "node dist/posts/server/server.mjs"
   },
+  "proxy": "http:localhost:8000",
   "private": true,
   "dependencies": {
     "@angular/animations": "^17.2.0",
