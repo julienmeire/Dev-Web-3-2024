@@ -39,8 +39,8 @@ app.use(errorController.get500);
 
 app.use(express.static(path.join(__dirname, '../frontend/src')))
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname + '/../frontend/src/index.html'))
-})
+#app.get('*', (req, res) => {
+ # res.sendFile(path.join(__dirname + '/../frontend/src/index.html'))
+#})
 
 let port = 8080;
