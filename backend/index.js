@@ -12,8 +12,6 @@ const app = express();
 
 const cors = require('cors'); 
 
-#const path = require('path');
-
 app.use(bodyParser.json());
 
 app.use(cors());
@@ -36,11 +34,5 @@ app.use('/post', postsRoutes);
 app.use(errorController.get404);
 
 app.use(errorController.get500);
-
-#app.use(express.static(path.join(__dirname, '../frontend/src')))
-
-#app.get('*', (req, res) => {
- # res.sendFile(path.join(__dirname + '/../frontend/src/index.html'))
-#})
 
 let port = 8080;
