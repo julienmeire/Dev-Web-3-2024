@@ -4,8 +4,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "cd backend && node index.js",
-    "heroku-postbuild": "cd frontend && npm install && npm run build"
+    "start": "cd frontend && npm i && cd ../backend && npm i",
+    "heroku-postbuild": "cd backend && node index.js && cd ../frontend && npm run build"
   },
   "keywords": [],
   "author": "",
