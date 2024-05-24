@@ -2,12 +2,7 @@
   "name": "posts",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "serve:ssr:posts": "node dist/posts/server/server.mjs"
+    "build": "ng build --prod"
   },
   "proxy": "http:localhost:8000",
   "private": true,
