@@ -1,2 +1,1 @@
-web: node server.js
-web: ng serve
+web: node backend/index.js
