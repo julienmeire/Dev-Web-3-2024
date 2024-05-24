@@ -8,17 +8,6 @@ const User = require('../models/user');
 
 const authController = require('../controllers/auth');
 
-router.get('/signup', authController.signup);
-
-router.get('/', async (req, res, next) => {
-    try {
-      const users = await User.find();
-      res.status(200).json(users);
-    } catch (error) {
-      next(error);
-    }
-  });
-
 router.post(
     '/signup', 
     [
