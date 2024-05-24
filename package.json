@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "cd frontend && node index.js",
+    "start": "cd frontend && npm install && npm start",
     "heroku-postbuild": "cd frontend && npm install && npm run build"
   },
   "keywords": [],
