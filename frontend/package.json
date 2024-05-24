@@ -2,7 +2,7 @@
   "name": "posts",
   "version": "0.0.0",
   "scripts": {
-    "build": "ng build --prod"
+    "build": "ng build"
   },
   "proxy": "http:localhost:8000",
   "private": true,
