@@ -35,8 +35,4 @@ app.use(errorController.get404);
 
 app.use(errorController.get500);
 
-let port = process.env.PORT;
-if (port == null || port == "") {
-  port = 8000;
-}
-app.listen(port);
+let port = 8080;
