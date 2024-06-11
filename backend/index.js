@@ -14,7 +14,7 @@ const cors = require('cors');
 app.use(bodyParser.json());
 
 app.use(cors());
-app.use(express.static('../frontend/dist/posts'));
+app.use(express.static('backend/frontend/dist/posts'));
 
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
