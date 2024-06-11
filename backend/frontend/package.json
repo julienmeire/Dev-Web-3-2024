@@ -6,7 +6,6 @@
     "start": "ng serve",
     "build": "ng build"
   },
-  "proxy": "http://localhost:33107",
   "private": true,
   "dependencies": {
     "@angular/animations": "^17.2.0",
