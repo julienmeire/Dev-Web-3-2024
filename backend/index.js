@@ -25,6 +25,10 @@ app.use((req, res, next) => {
     next();
 });
 
+app.get('/', (req, res) => {
+    res.send('Le serveur fonctionne correctement!');
+});
+
 app.use('/auth', authRoutes);
 
 app.use('/post', postsRoutes);
