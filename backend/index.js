@@ -24,13 +24,13 @@ app.use((req, res, next) => {
     next();
 });
 
-app.get('/', (req, res) => {
-    res.send('Le serveur fonctionne correctement!');
-});
-
 app.use('/auth', authRoutes);
 
 app.use('/post', postsRoutes);
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'frontend/dist/posts/index.html'));
+});
 
 app.use(errorController.get404);
 
