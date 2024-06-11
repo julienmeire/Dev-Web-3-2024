@@ -2,7 +2,9 @@
   "name": "posts",
   "version": "0.0.0",
   "scripts": {
-    "postinstall": "ng build"
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build"
   },
   "proxy": "http:localhost:8080",
   "private": true,
