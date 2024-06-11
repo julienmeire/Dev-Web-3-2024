@@ -27,10 +27,6 @@ app.use('/auth', authRoutes);
 
 app.use('/post', postsRoutes);
 
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'frontend/dist/posts/index.html'));
-});
-
 app.use(errorController.get404);
 
 app.use(errorController.get500);
