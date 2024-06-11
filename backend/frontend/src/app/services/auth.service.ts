@@ -11,7 +11,7 @@ import { ErrorHandlerService } from './error-handler.service';
   providedIn: 'root'
 })
 export class AuthService {
-  private url = "http://localhost:3000/auth";
+  private url = "https://chevalhala-ce2e0d1120dd.herokuapp.com/auth";
 
   isUserLoggedIn$ = new BehaviorSubject<boolean>(false)
   userId: Pick<User, "id">;
