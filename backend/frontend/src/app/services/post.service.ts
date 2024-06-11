@@ -10,7 +10,7 @@ import { catchError } from 'rxjs';
   providedIn: 'root'
 })
 export class PostService {
-  private url = "http://localhost:3000/post";
+  private url = "https://chevalhala-ce2e0d1120dd.herokuapp.com/post";
 
   httpOptions: { headers: HttpHeaders } = {
     headers: new HttpHeaders({ "Content-Type": "application/json"}),
