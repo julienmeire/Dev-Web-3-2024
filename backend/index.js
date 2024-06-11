@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 
 app.use(cors());
 
-app.use(express.static('/frontend'));
+app.use(express.static('/frontend/src'));
 
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
@@ -32,6 +32,10 @@ app.get('/', (req, res) => {
 app.use('/auth', authRoutes);
 
 app.use('/post', postsRoutes);
+
+app.get('*', (req, res) => {
+  res.sendFile(/frontend/src/index.html')
+})
 
 app.use(errorController.get404);
 
