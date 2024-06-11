@@ -4,8 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
-    "postinstall": "ng build
+    "build": "ng build"
   },
   "proxy": "http:localhost:33107",
   "private": true,
