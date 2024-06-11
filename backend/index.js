@@ -1,5 +1,4 @@
 const express = require('express');
-const path = require('path');
 const bodyParser = require('body-parser');
 
 const authRoutes = require('./routes/auth');
@@ -15,7 +14,7 @@ const cors = require('cors');
 app.use(bodyParser.json());
 
 app.use(cors());
-app.use(express.static(path.join(__dirname, '../frontend/dist/posts')));
+app.use(express.static('/frontend/dist/posts'));
 
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
